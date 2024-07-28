@@ -1,0 +1,15 @@
+<div class="user-list">
+  <div *ngFor="let user of users" 
+       [class.selected]="user === selectedUser"
+       (click)="selectUser(user)">
+    {{ user.name }}
+  </div>
+</div>
+
+<div *ngIf="selectedUser" class="chart-container">
+  <h2>{{ selectedUser.name }}'s workout progress</h2>
+  <app-workout-progress 
+    [userData]="selectedUser.workouts"
+    [userName]="selectedUser.name">
+  </app-workout-progress>
+</div>

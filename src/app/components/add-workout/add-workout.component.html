@@ -1,0 +1,37 @@
+<div class="max-w-md mx-auto p-6 bg-gray-100 rounded-lg shadow-md">
+  <h2 class="text-2xl font-bold mb-6 text-center">ADD WORKOUT HERE</h2>
+    
+    <form [formGroup]="workoutForm" (ngSubmit)="onSubmit()">
+      <div class="mb-4">
+        <input formControlName="name" type="text" placeholder="User Name*" 
+          class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+      </div>
+      
+      <div class="mb-4 relative">
+        <select formControlName="type" 
+          class="w-full p-3 border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+          <option value="" disabled>Workout Type*</option>
+          <option value="Gym">Gym</option>
+          <option value="Cycling">Cycling</option>
+          <option value="Running">Running</option>
+          <option value="Swimming">Swimming</option>
+          <option value="Yoga">Yoga</option>
+        </select>
+        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+          </svg>
+        </div>
+      </div>
+      
+      <div class="mb-6">
+        <input formControlName="duration" type="number" placeholder="Workout Minutes*" 
+          class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+      </div>
+      
+      <button type="submit" 
+        class="w-full bg-blue-600 text-white p-3 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition">
+        Add Workout
+      </button>
+    </form>
+</div>
