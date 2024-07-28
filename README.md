@@ -1,6 +1,6 @@
 # health-challenge-tracker  💪
 
-# PROJECT OVERVIEW 
+# Project Overview
 
 The Health Challenge Tracker is a single-page application (SPA) built with Angular 14+. It allows users to track their workout activities by adding user names, workout types, and workout minutes. The application provides functionalities to display, search, filter, and paginate the workout records. Additionally, it includes charts to display workout progress. 
 
@@ -40,9 +40,11 @@ The Health Challenge Tracker is a single-page application (SPA) built with Angul
 # Edge Cases
 
 -Handles scenarios where no users are added.
+
 -Manages empty search results gracefully.
+
 -Validates input fields to prevent invalid data entry.
 
-🌐 Hosted On:
+# 🌐 Hosted On:
 The application is hosted on Netlify, and you can access it here - 
 https://fitnessbudyy.netlify.app/
